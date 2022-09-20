@@ -1,0 +1,20 @@
+{
+  "name": "candidates-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "path": "^0.12.7",
+    "puppeteer": "^18.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract": "node extractor.js",
+    "scrape": "node scraping.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
