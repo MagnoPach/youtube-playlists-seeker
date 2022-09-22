@@ -9,7 +9,7 @@ const candidateState = Candidates[0]['UF'].toLocaleLowerCase()
 function filterCandidatesByPositionAndDeferral() {
     const validCandidatesTemp = Candidates
     .filter(candidate => candidate['CARGO']
-    .includes('ESTADUAL') && candidate['DETALHE_SITUACAO_CAND'] === 'DEFERIDO');
+    .includes('FEDERAL') && candidate['DETALHE_SITUACAO_CAND'] === 'DEFERIDO');
     
     loopRequest(validCandidatesTemp);
 }
@@ -32,7 +32,7 @@ async function getImageByCandidatesPageInTse(candidate) {
 }
 
 function convertCandidateListToJson(candidates) {
-    fs.writeFileSync(`candidatos-deputado-estadual-${candidateState}.json`, JSON.stringify(candidates, null, 4), 'utf-8', (err) => {
+    fs.writeFileSync(`candidatos-deputado-federal-${candidateState}.json`, JSON.stringify(candidates, null, 4), 'utf-8', (err) => {
         if(err) console.log(err)
     })
 }
