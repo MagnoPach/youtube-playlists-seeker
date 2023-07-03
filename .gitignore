@@ -32,6 +32,7 @@ node_modules
 #dist folder
 dist
 .env
+.env*.local
 # IDEA/Webstorm project files
 .idea
 *.iml
